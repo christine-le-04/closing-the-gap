@@ -1,0 +1,410 @@
+/* External CSS style file */
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   font-family: 'IBM Plex Mono', monospace;
+   background: #f1f1f1;
+   display: block;
+   margin: 0px;
+}
+
+/* Header (div) formatting */
+.header {
+   text-align: center;
+   color: #000000;
+   font-size: 25px;
+   padding: 3.3% 5%;
+   background-color: #E7EBEA;
+}
+
+/* section styling */
+#about h2, #population h2, #outcomes h2, #outcomes2 h2, #state-territory h2, #data h2, #tableFilter h2 {
+   font-size: 260%;
+}
+
+#outcomes2 h2 {
+  text-align: center;
+}
+
+#about p, #population p, #data p {
+   font-size: 100%;
+   padding-bottom: 35px;
+}
+
+#outcomes span {
+   padding-bottom: 60px;
+   display: inline-block;
+}
+
+/* section spacing and colouring */
+#about, #outcomes, #data, #tableFilter {
+  background-color: #E7EBEA;
+  padding: 60px 7%;
+}
+
+#population, #tableFilter {
+  padding: 60px 7%;
+}
+
+#state-territory {
+  padding: 60px;
+  margin-left: 3%;
+}
+
+/* Make the logo have a rounded edge */
+/* img.top-image {
+   vertical-align: middle;
+} */
+
+/* navigation bar styling */
+.topnav {
+  width: 100%;
+  background: #12cdd4;
+  padding: .3% 0;
+} 
+.topnav ul {
+  text-align: center;
+  margin-left: -3%;
+}
+.topnav ul li {
+  display: inline-block;
+
+}
+.topnav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 20px;
+  background-color: white;
+}
+.topnav ul li a, .topnav ul li a:after, .topnav ul li a:before {
+  transition: all .3s;
+}
+div.topnav ul li a {
+  position: relative;
+  z-index: 1;
+}
+div.topnav ul li a:hover {
+  color: white;
+}
+div.topnav ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 1px;
+  content: '';
+  background: black;
+  opacity: 0;
+  z-index: -1;
+}
+
+div.topnav ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+/* hero image on landing page */
+.hero-image {
+  background-image: url("https://auspire.org.au/wp-content/uploads/2022/07/Cultural-Awareness-landing-page-Web-HERO-1450x700-1.png");
+  height: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 28%;
+  padding-left: 7%;
+  color: white;
+  font-size: 100px; 
+  -webkit-text-stroke: 2px black;
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.hero-text span:first-child {
+  grid-row: 1;
+}
+
+.hero-text span:last-child {
+  grid-row: 2;
+}
+
+/* header images */
+.header-img {
+  background-image: url(https://images.squarespace-cdn.com/content/v1/5d353b3fe7e4a000019516e7/1595375980207-5ZZFPT451CZV5RP5QO95/Website+Banner+1.PNG?format=2500w);
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+} 
+
+.header-img2 {
+  background-image: url(https://www.prolab.com.au/blog/wp-content/uploads/2023/02/Aboriginal-Art-1024x601.jpg);
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-txt h1, .header-text h1 {
+  margin-top: 7.7%;
+  text-align: center;
+  position: absolute;
+  padding: 0 10%;
+  color: white;
+  font-size: 45px; 
+  -webkit-text-stroke: 2px black;
+}
+
+.header-image {
+  background-image: url("https://cbpatsisp.com.au/wp-content/uploads/2020/07/Banner-1024x271-1.jpg");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.header-image2 {
+  background-image: url("https://blog.artsper.com/wp-content/uploads/2021/08/blog-header-image-1-1-e1626684716856.png");
+  height: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* socio-economic outcomes */
+.outcome-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.outcome-desc a {
+  text-decoration: none;
+}
+
+.outcome-desc {
+  text-align: center;
+  justify-content: center; 
+  align-items: center;
+  font-weight: 530;
+  padding: 2%;
+  margin-bottom: 2%;
+  margin-right: 3%;
+  display: grid;
+  width: 22%; 
+  padding-left: 2%;
+  padding-right: 2%;
+  --c: #1095c1;
+  --b: 3px;
+  --d: 12px;
+  
+  --_s: calc(var(--d) + var(--b));
+  
+  color: #000;
+  border: solid #1095c1;
+  border-width: var(--b) var(--b) var(--_s) var(--_s);
+  background: #fff;
+  transform: translate(calc(var(--d)/-1),var(--d));
+  clip-path: 
+    polygon(
+      var(--d) 0%, 
+      var(--d) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--d)),
+      100% calc(100% - var(--d)),
+      var(--d) calc(100% - var(--d))
+    );
+  transition: 0.3s;
+}
+
+.outcome-desc:hover {
+  background-color: #f1f1f1;
+  transform: translate(0,0);
+  clip-path: 
+    polygon(
+      0% var(--d), 
+      var(--d) 0%, 
+      100% 0%, 
+      100% calc(100% - var(--d)), 
+      calc(100% - var(--d)) 100%, 
+      0% 100%
+    );
+}
+
+/* Style the content */
+.content {
+  background-color: white;
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  padding-top: 45px 7%;
+  background-color: #12cdd4;
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
+
+.footer h3 {
+  margin-top: 9%;
+  margin-bottom: 3%;
+  margin-left: 14%;
+}
+
+.footer p {
+  margin-bottom: 9%;
+  margin-left: 7%;
+}
+
+.footer li {
+  list-style: none;
+  margin-bottom: 1%;
+  margin-left: 9%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.column p, .column ul {
+  padding-right: 12%;
+  padding-left: 7%;
+}
+
+/* 2a data boxes */
+.box-padding {
+  height: 200px;
+  width: 16%;
+  display: grid;
+  border: 2px solid black;
+  margin: 1.5%;
+  box-shadow: inset 0 0 0 2px #000, inset -2px -2px 0 4px #CCC;
+}
+
+.box-text {
+  text-decoration: none;
+  color: black;
+  font-size: 120%;
+  display: flex;
+  justify-content: center; /* centres single lines */
+  align-items: center; /* centres vertically */
+  text-align: center; /* centres multiple lines */
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.row-align {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* table styling */
+#popTable {
+  border:1.5px solid black;
+  border-collapse: collapse;
+  background-color: white;
+  height: fit-content;
+  overflow-y: hidden;
+}
+
+table {
+  border:1.5px solid black;
+  border-collapse: collapse;
+  overflow-y: auto;
+  height:65%;
+  display:block;
+  background-color: white;
+}
+
+td {
+  border:1.5px solid black;
+  padding: 10px;
+}
+tr:hover {
+  background-color: rgb(235, 235, 235)  ;
+}
+
+th {
+  border-color: #000;
+  border:1.5px solid;
+  background-color: #10d8df;
+  padding: 10px;
+  width: 8%;
+  position: sticky;
+  top: 0; 
+}
+
+ .container2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container3 {
+  background-color: #ffffff;
+}
+
+.box {
+  width: 400px;
+  height: 1200px;
+  background-color: #E7EBEA;
+}
+
+.box2 {
+  width: 400px;
+  height: 200px;
+  background-color: #E7EBEA;
+}
+
+.box3 {
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+}
+
+.box img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 16px;
+  
+}
+
+input[type='radio'] {
+  margin-right: 5px;
+}
+
+#chartCanvas {
+  width: 300px;
+  height: 300px;
+}
+ 
